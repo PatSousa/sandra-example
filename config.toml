@@ -1,0 +1,304 @@
+# Site settings
+baseurl = "www.mkb-hrdesk.nl"
+languageCode = "nl-NL"
+title = "mkb-hrdesk"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Sandra Muijderman"
+  description = """De MKB HR Desk staat MKB ondernemingen bij op de momenten dat zij HR kennis nodig
+hebben en is zo uw HR partner op oproepbasis. De MKB HR Desk reageert snel op uw
+aanvraag. De meeste HR situaties komen immers onverwacht, dus wij vinden het
+belangrijk om u snel van dienst te zijn. De MKB HR Desk is praktisch ingesteld en komt
+daarom met een advies dat u direct in de praktijk kunt gebruiken."""
+
+# Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "mkb-hrdesk"
+    # Optional logo as brand stored in img/
+    # logo = "logo.svg"
+    services = "Wat doet de MKB HR Desk?"
+    about = "HR onderwerpen"
+    team = "Wie zit er achter de MKB HR Desk?"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    # [[menu.postpend]]
+    #  url = "http://gohugo.io"
+    #  name = "External link"
+    #  weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "Some title you invented!"
+    subtitle = "It's nice to meet you"
+    # buttonText = "Tell me more"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Wat doet de MKB HR Desk?"
+    subtitle = """De MKB HR Desk staat MKB ondernemingen bij op de momenten dat zij HR kennis nodig
+                  hebben en is zo uw HR partner op oproepbasis. De MKB HR Desk reageert snel op uw
+                  aanvraag. De meeste HR situaties komen immers onverwacht, dus wij vinden het
+                  belangrijk om u snel van dienst te zijn. De MKB HR Desk is praktisch ingesteld en komt
+                  daarom met een advies dat u direct in de praktijk kunt gebruiken.
+                  DE MKB HR Desk kan u op verschillende manieren ondersteunen:"""
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-shopping-cart"
+      title = "Coachen"
+      description = "Deze manier van ondersteuning is met name aan de orde als u beschikt over basis HR kennis en/of ervaring, maar u wenst dat de MKB HR Desk u in deze specifieke situatie begeleidt in het proces, meekijkt en bijstuurt waar nodig."
+      # url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-laptop"
+      title = "Adviseren"
+      description = "De MKB HR Desk is uw HR adviseur. De MKB HR Desk weegt alle mogelijkheden af en voorziet u van een praktisch advies. Indien gewenst kan de MKB HR Desk ook ondersteunen bij het implementeren van dit advies."
+      # url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "Ontzorgen"
+      description = "Indien u liever uw HR activiteiten uitbesteedt, kan de MKB HR Desk u ontzorgen op HR gebied. De MKB HR Desk kan inhouse aanwezig zijn en de gewenste HR activiteiten uitvoeren. Op deze manier bent u in staat zich met de core business van uw onderneming bezig te houden."
+      # url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "Trainen"
+      description = "Naast de manieren van ondersteunen, kan de MKB HR Desk u en/of uw medewerkers ook trainingen geven om de HR basis kennis te beheersen. Op deze manier kunnen de basis HR activiteiten binnen de onderneming opgepakt worden. Deze training kan op maat gemaakt worden zodat deze volledig voorziet in uw behoefte."
+      # url = "#"
+
+  # About section
+  [params.about]
+    enable = true
+    title = "HR onderwerpen"
+    subtitle = "U kunt de MKB HR Desk voor diverse onderwerpen inschakelen:"
+    # endpoint = "Be part<br>of our<br>story!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "some.png"
+      title = "HR administratie"
+      description = "Opstellen van contracten en de personeelsdossiers aan alle wet- en regelgeving laten voldoen."
+
+    [[params.about.events]]
+      img = "law.svg"
+      title = "HR administratie"
+      description = "Advies over cao’s, ontslag, disfunctioneren en beëindigingsovereenkomsten."
+
+    [[params.about.events]]
+      img = "doc.png"
+      title = "Arbeidsrecht"
+      description = "Het vormgeven van uw HR beleid, bijvoorbeeld in de vorm van een  personeelshandboek en het opstellen van daarbij behorende procedures"
+
+    [[params.about.events]]
+      img = "bed.svg"
+      title = "HR beleid"
+      description = "Het begeleiden van uw zieke medewerker door als case manager op te treden."
+
+    [[params.about.events]]
+      img = "jobsek.svg"
+      title = "Werving en selectie"
+      description = "Hulp en ondersteuning bij het vinden van uw nieuwe collega. Valt uw situatie onder een ander HR onderwerp? Neem dan contact op om na te gaan in hoeverre de MKB HR Desk of haar collega’s u eventueel kunnen bijstaan."
+
+    [[params.about.events]]
+      img = "partners.png"
+      title = "Partners"
+      description = "De MKB HR Desk vindt het niet alleen belangrijk om u een goede HR dienstverlening te bieden, maar wilt u ook graag doorverwijzen naar andere specialisten die werkzaam zijn op een gebied die HR raken. Om deze reden werkt de MKB HR Desk samen met een aantal partners op het gebied van arbeidsrecht, salarisadministratie en re-integratie bij ziekte. Wij kunnen u op verzoek met deze specialisten in contact brengen."
+
+
+  # Portfolio section
+  [params.portfolio]
+    enable = false
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Portfolio"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    center = true
+    title = "Wie zit er achter de MKB HR Desk? "
+    # subtitle = "Lorem ipsum dolor sit amet consectetur."
+    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "3.jpg"
+      name = "Sandra Muijderman"
+      # position = "Lead Designer"
+      # reportsTo = "CTO"
+      # livesIn = "[Munich, Germany](#some-maps-url)"
+      # scope = [
+      #  "UX for [member dashboard](#)",
+      #  "Maintainer for [awesome-project](#)",
+      #  "Open Source [community management](#)"
+      # ]
+      # For bio markdown and even multiline strings are available.
+      bio = """Mijn naam is Sandra Muijderman; een gepassioneerde HR professional. Mijn passie voor HR komt voort uit het voortdurend balanceren tussen werkgever en werknemer. Dat is voor mij de ultieme uitdaging binnen HR! 
+               Ik heb een studieachtergrond in Bedrijfskunde en Arbeidsrecht. Hierdoor ben ik breed inzetbaar binnen het HR werkveld. Daarnaast heb ik HR ervaring opgedaan bij non-profit en commerciële organisaties van administratie tot het ontwikkelen van beleid."""
+
+  # Client section
+    [params.clients_list]
+      enable = false
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.clients]]
+        logo = "envato.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "designmodo.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "themeforest.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "creative-market.jpg"
+        link = "#"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact"
+    img = "email.svg"
+    subtitle  = "Wilt u de MKB HR Desk inschakelen of meer informatie hebben? Neem dan vrijblijvend contact op:"
+    name = "Sandra Muijderman"
+    email = "sandra@mkb-hrdesk.nl"
+    phone = "0641912220"
+    # buttonText = "Send message"
+    # netlify = true
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    # email = "your@email.com"
+
+    # Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at mail@example.com instead."
+
+    # [params.contact.captcha]
+      # sitekey = ""
+
+    # 'warning' defines error messages for invalid inputs
+    # [params.contact.form.name]
+      #text = "Your Name *"
+      #warning = "Please enter your name."
+
+    #[params.contact.form.email]
+    #  text = "Your Email *"
+    #  warning = "Please enter your email address."
+
+    #[params.contact.form.phone]
+    #  text = "Your Phone *"
+    #  warning = "Please enter your phone number."
+
+    #[params.contact.form.message]
+    #  text = "Your Message *"
+    #  warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Published under the Apache License 2.0."

@@ -1,0 +1,23 @@
+{{ $contact := .Site.Params.contact }}
+{{ "<!-- Contact Section -->" | safeHTML }}
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+
+        {{ with $url := printf "img/contact/%s" $contact.img }}
+        <img src="{{ $url | absURL }}" class="img-responsive img-circle contact" alt="{{ $contact.img }}">
+        {{ end }}
+
+        {{ with $contact.subtitle }}
+        <h3 class="section-subheading text-muted">{{ . | markdownify }}</h3>
+        {{ end }}
+        
+        <h3 class="white-font">{{ $contact.name }}</h3>
+        <p class="white-font">{{ $contact.email }}</p>
+        <p class="white-font">{{ $contact.phone }}</p>
+      </div>
+    </div>
+  </div>
+</section>
